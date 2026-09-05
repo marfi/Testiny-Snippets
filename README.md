@@ -37,8 +37,6 @@ It adds:
 - A six-state legend for Passed, Failed, Blocked, Skipped, Not Run, and In Progress.
 - Automatic refresh every 30 seconds and support for in-app milestone navigation.
 
-![Milestone results dashboard with completion donut and result breakdown](docs/images/milestone-results-dashboard.png)
-
 The formulas are:
 
 ```text
@@ -62,8 +60,6 @@ File: `testiny_milestone_ribbon_rates.js`
 
 This is the lightweight milestone alternative. It adds Success Rate, Failure Rate, and Not Run to the existing milestone ribbon, including formula tooltips, but does not add the larger donut-chart panel.
 
-![Milestone ribbon with completion, success, failure, and not-run rates](docs/images/milestone-ribbon-rates.png)
-
 Use either this snippet or `testiny_milestone_quality_rates.js` on a milestone page. Running one automatically removes the other because they share the same lifecycle controller.
 
 To remove the enhancement without reloading:
@@ -85,8 +81,6 @@ Run this snippet from a project's **Users** tab to preserve Testiny's original t
 - No access: dimmed.
 
 | Run Tester highlighting | Viewer highlighting |
-|---|---|
-| ![Run Tester row highlighted in blue](docs/images/user-role-highlighter-tester.png) | ![Viewer row highlighted in green](docs/images/user-role-highlighter-viewer.png) |
 
 The highlighter reads the **Effective role** column, so users who inherit access remain categorized correctly. It follows dynamically rendered rows while scrolling.
 
@@ -120,8 +114,6 @@ It replaces the large virtualized tenant-user table with a compact project-acces
 - Removing a direct role does not remove access inherited through a permission group.
 - The project owner and tenant administrators remain locked because Testiny manages them at organization level.
 - Data refreshes every 30 seconds and follows in-app project navigation.
-
-![Compact project-access dashboard grouping elevated roles and viewers](docs/images/project-access-dashboard.png)
 
 Role changes are applied immediately when a card's **Save** button is selected. Testiny's project-user quota validation still applies.
 
